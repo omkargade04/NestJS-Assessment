@@ -24,6 +24,8 @@
 
 ## Description
 
+This application is a BACKEND PROJECT which provides users with a RESTful BookAPI able to perform CRUD Operations and stores data using PostgreSQL Database with features such as user Authentication and Authorization.
+
 [Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
 
 ## Installation
@@ -57,6 +59,23 @@ $ npm run test:e2e
 # test coverage
 $ npm run test:cov
 ```
+## Features of the Application
+- This is a BookAPI which gives the user the specified book details.
+- It allows CRUD Operations and the user can Add, Update, Get and Delete the Book details accordingly
+- It is a RESTful API
+- If you access the header with wrong username and password field you will get an error.
+- The beauty of Nestjs is its unique Architecture which provides inbuilt Dtos, Controllers, Providers and Modules
+- PostgreSQL is used to store the Book Details and the User Details.
+- The User needs to be Authenticated to use the application. We dont have UI for Authentication but we do have an endpoint for it which we can integrate in future.
+- The is also an endpoint for Role Authorization
+- 
+## Flow of Application
+- First step is you need to integrate your database(PostgreSQL) with the application 
+  go to .local.env and add your database credentials accordingly
+- Run the following command line : "npm run start:dev" to get started with the application
+- To test the API endpoints, open any API Tester application such as Postman or Thunder Client.
+- Make sure that the Header Field has the same username and password as given in the "book.guard.ts". username = "user", password = "password".
+- Test the APIs and you are all set to go.
 
 ## Support
 
